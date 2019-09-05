@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-example
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        backend:
+          serviceName: web1-clusterip
+          servicePort: 80
+      - path: /hello 
+        backend:
+          serviceName: hello1-clusterip
+          servicePort: 80
