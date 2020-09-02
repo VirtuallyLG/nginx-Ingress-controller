@@ -1,5 +1,6 @@
 # nginx-Ingress-controller
 K8S Nginx ingress controller for simple apps demo
+uses NGINX Ingress version 0.31.1
 
 Provides a simple demo for a nginx and hello-world app that can be reached via the loadbalance IP of the ingress-loadbalancer service.
 
